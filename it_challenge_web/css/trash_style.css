@@ -1,0 +1,13 @@
+:root {
+    --clr-primary: #21AAE2;
+    --clr-secondary: #E02386;
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+
+.zd-container {
+    grid-column: 2/16;
+}

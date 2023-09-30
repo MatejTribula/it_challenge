@@ -1,0 +1,22 @@
+:root {
+    --clr-primary: #21AAE2;
+    --clr-secondary: #E02386;
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+
+
+.about,
+.emplyees,
+.questions {
+    grid-column: 1/7;
+}
+
+.contact,
+.form,
+.files {
+    grid-column: 8/13;
+}

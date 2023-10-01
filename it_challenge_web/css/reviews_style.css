@@ -21,7 +21,7 @@
 
 
 .review-card {
-    width: 450px;
+    width: calc(84%/3);
     border: 1px solid var(--clr-primary);
     /* flex-grow: 1; */
     border-radius: 10px;
@@ -49,6 +49,7 @@
 .rc-user>img {
     border-radius: 50%;
     width: 50px;
+    height: 50px;
     margin-right: 1rem;
 }
 
@@ -79,4 +80,35 @@
     margin-right: 1rem;
 }
 
-@media screen and (max-width: 1000px) {}
+.rc-stars i {
+    margin-right: 0;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .reviews-box {
+        justify-content: space-between;
+    }
+
+    .review-card {
+        width: calc(88%/2);
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .review-card {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .rc-info {
+        flex-direction: column;
+    }
+
+
+}

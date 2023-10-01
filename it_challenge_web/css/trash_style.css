@@ -19,8 +19,8 @@
 }
 
 .zd-card {
-    max-width: 25vw;
-    min-width: 300px;
+    max-width: 30%;
+    /* min-width: 300px; */
     border-radius: 10px;
     border: 1px solid var(--clr-primary);
 }
@@ -48,6 +48,7 @@
 .zd-items {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .zd-item {
@@ -56,6 +57,7 @@
     color: var(--clr-white);
     border-radius: 5px;
     margin-right: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .zd-sizes {
@@ -66,4 +68,17 @@
 .zd-letter {
     font-size: 1.2rem;
     margin-bottom: 0.25rem;
+}
+
+@media screen and (max-width: 800px) {
+    .zd-box {
+        flex-direction: column;
+    }
+
+    .zd-card {
+        max-width: none;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
 }

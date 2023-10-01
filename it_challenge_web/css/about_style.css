@@ -165,3 +165,36 @@ textarea:focus,
 input:focus {
     outline: 2px solid var(--clr-secondary);
 }
+
+@media screen and (max-width: 1000px) {
+
+    .about,
+    .contact,
+    .employees,
+    .form,
+    .files,
+    .questions {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .employee {
+        width: 100%;
+        max-width: none;
+    }
+
+    form>.full-name {
+        flex-direction: column;
+    }
+
+    .name {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cc-text {
+        flex-direction: column;
+    }
+}

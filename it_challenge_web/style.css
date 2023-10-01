@@ -35,7 +35,7 @@ body>* {
 
 section {
     padding: 2rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 
 
@@ -430,7 +430,7 @@ footer>a {
 
     section {
         border-radius: 0;
-        padding: 1.5rem;
+        padding: 3rem 1.5rem;
     }
 
     h1 {
@@ -464,6 +464,10 @@ footer>a {
         text-align: center;
     }
 
+    .footer-links {
+        margin-left: 0;
+    }
+
 }
 
 
@@ -476,8 +480,5 @@ footer>a {
         display: block;
     }
 
-    .fl-divider {
-        display: flex;
-        flex-direction: column;
-    }
+
 }

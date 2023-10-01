@@ -1,0 +1,53 @@
+:root {
+    --clr-primary: #21AAE2;
+    --clr-secondary: #E02386;
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+
+.mad {
+    grid-column: 1/12;
+    background-color: var(--clr-secondary);
+    display: grid;
+    grid-template-columns: subgrid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.news {
+    grid-column: 2/13;
+    background-color: var(--clr-primary);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.mad-container {
+    grid-column: 2/11;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+.mc-text {
+    grid-column: 1/6;
+    color: var(--clr-white);
+}
+
+.mc-text>p {
+    margin-bottom: 1rem;
+}
+
+.mad-container>img {
+    grid-column: 6/11;
+    border-radius: 10px;
+}
+
+.mc-text li a {
+    color: var(--clr-white);
+}
+
+h2 {
+    grid-column: 2/6;
+}

@@ -60,6 +60,10 @@ h2 {
         border-radius: 0;
     }
 
+    .mad {
+        display: block;
+    }
+
     .news {
         display: flex;
         flex-direction: column;
@@ -70,6 +74,10 @@ h2 {
     .mad-container {
         display: flex;
         flex-direction: column;
+    }
+
+    .news-card {
+        margin-right: 0;
     }
 }
 

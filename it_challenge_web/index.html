@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/index_style.css">
 
+    <script src="https://kit.fontawesome.com/11ce3943d3.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-    <div id="hamburgerMenu" class="hamburger-menu">
-        <img src="/resources/icons/cross-small.svg" id="xIcon" class="x-icon">
-
+    <div id="hamburgerMenu" class="hamburger-menu hidden">
+        <i id="hamburgerCross" class="fa-solid fa-xmark text-secondary"></i>
         <ul>
             <li><a href="html/vehicles.html">Vozidlá</a></li>
             <li><a href="html/trips.html">Zájazdy</a></li>
             <li><a href="html/about.html">O nás</a></li>
+            <li><a href="html/news.html">Aktuality</a></li>
             <li><a href="html/reviews.html">Hodnotenia</a></li>
             <li><a href="html/mad_topolcany.html">MAD Topoľčany</a></li>
             <li><a href="html/trash.html">Zber odpadu</a></li>
@@ -46,7 +49,7 @@
 
     </header>
     <section class="hero">
-        <img src="resources/images/#" alt="freibus title image">
+        <img src="resources/images/bus.jpg" alt="freibus">
         <div class="hero-text">
             <h1>Cestujte pohodlne s <span class="text-secondary">Freibus Slovakia</span></h1>
 
@@ -75,28 +78,28 @@
                     <h3>Hľadáme šoféra autobusu</h3>
                     <ul>
                         <li>
-                            <img class="icon" src="resources/icons/marker.svg" alt="pin">
+                            <i class="fa-solid icon fa-location-dot"></i>
                             <div>
                                 <p><span class="text-bold">Lokalita</span><br>Topoľčany</p>
                             </div>
                         </li>
 
                         <li>
-                            <img class="icon" src="resources/icons/usd-circle.svg" alt="eur">
+                            <i class="fa-solid icon fa-money-check-dollar"></i>
                             <div>
                                 <p><span class="text-bold">Plat</span><br>1250€ (v hrubom)</p>
                             </div>
                         </li>
 
                         <li>
-                            <img class="icon" src="resources/icons/phone-call.svg" alt="mobil">
+                            <i class="fa-solid icon fa-mobile"></i>
                             <div>
                                 <p><span class="text-bold">Telefónne číslo</span><br>0904 300 542</p>
                             </div>
                         </li>
 
                         <li>
-                            <img class="icon" src="resources/icons/marker.svg" alt="pin">
+                            <i class="fa-solid icon fa-envelope"></i>
                             <div>
                                 <span class="text-bold">E-mail</span><br>ckfreibus@gmail.com
                             </div>
@@ -104,6 +107,7 @@
                     </ul>
                 </div>
             </div>
+
             <div class="news-card">
                 <div class="nc-square">
                     <p>Reklama</p>
@@ -112,28 +116,28 @@
                     <h3>Získajte reklamu na kolesách</h3>
                     <ul>
                         <li>
-                            <img class="icon" src="resources/icons/marker.svg" alt="pin">
+                            <i class="fa-solid icon fa-location-dot"></i>
                             <div>
                                 <p><span class="text-bold">Lokalita</span><br>MHD Topoľčany</p>
                             </div>
                         </li>
 
                         <li>
-                            <img class="icon" src="resources/icons/usd-circle.svg" alt="eur">
+                            <i class="fa-solid icon fa-money-check-dollar"></i>
                             <div>
                                 <p><span class="text-bold">Cena</span><br>od 70€ do 125€</p>
                             </div>
                         </li>
 
                         <li>
-                            <img class="icon" src="resources/icons/phone-call.svg" alt="mobil">
+                            <i class="fa-solid icon fa-mobile"></i>
                             <div>
                                 <p><span class="text-bold">Telefónne číslo</span><br>0905 885 399</p>
                             </div>
                         </li>
 
                         <li>
-                            <img class="icon" src="resources/icons/folder.svg" alt="priečinok">
+                            <i class="fa-solid icon fa-folder"></i>
                             <div>
                                 <span class="text-bold"><a class="download-link"
                                         href="/resources/files/cennik_reklamy.pdf" download>Cenník reklamy</a></span>
@@ -156,8 +160,7 @@
                 <img src="resources/images/family_trips.jpg" alt="rodina">
                 <div class="tc-content">
                     <h3>Rodinné zájazdy</h3>
-                    <p>Zažite nezabudnuteľný zážitok plný dobrodružstva a pohody. Naša ponuka zájazdov vám umožní
-                        stráviť kvalitný čas s vašou rodinou.</p>
+                    <p>Zažite nezabudnuteľný zážitok plný dobrodružstva a pohody. </p>
                 </div>
             </div>
 
@@ -165,7 +168,7 @@
                 <img src="resources/images/couple_trips.jpg" alt="pár">
                 <div class="tc-content">
                     <h3>Romantické pobyty</h3>
-                    <p>Zažite nezabudnuteľný romantický zážitok plný lásky a oddychu. Vyberte sa s nami na cestu,
+                    <p>Vyberte sa s nami na cestu,
                         ktorá vás prenesie do sveta romantiky.</p>
                 </div>
             </div>
@@ -174,8 +177,7 @@
                 <img src="resources/images/exploration_trips.jpg" alt="Praha">
                 <div class="tc-content">
                     <h3>Poznávacie zájazdy</h3>
-                    <p>Naša ponuka poznavacích zájazdov vám umožní stráviť kvalitný čas s vašimi blízkymi,
-                        zatiaľ čo objavujete fascinujúce destinácie po celom svete</p>
+                    <p>Naša ponuka poznavacích zájazdov vám umožní objaviť fascinujúce destinácie po celom svete</p>
                 </div>
             </div>
 
@@ -183,7 +185,7 @@
                 <img src="resources/images/shopping_trip.jpg" alt="nákup">
                 <div class="tc-content">
                     <h3>Nákupné zájazdy</h3>
-                    <p>Naše špeciálne nakupujúce zájazdy sú skvelým spôsobom, objavovať úžasné nákupné
+                    <p>Skvelý spôsobom, ako objavovať úžasné nákupné
                         destinácie po celom svete. </p>
                 </div>
             </div>
@@ -197,88 +199,82 @@
 
         <ul class="footer-contact">
             <li>
-                <p class="text-secondary text-bold">Freibus SLOVAKIA, s.r.o.</p>
+                <p class="text-secondary text-bold">Freibus SLOVAKIA, s.r.o. + CK Freibus SLOVAKIA Tour, s.r.o</p>
                 <ul>
                     <li>
-                        <img class="icon" src="resources/icons/phone-call.svg" alt="mobil">
+                        <i class="fa-solid icon fa-mobile"></i>
                         <p><span class="text-bold">Telefónne číslo</span><br>0904 060 621</p>
 
                     </li>
 
                     <li>
-                        <img class="icon" src="resources/icons/envelope.svg" alt="obálka">
+                        <i class="fa-solid icon fa-envelope"></i>
                         <p><span class="text-bold">E-mail</span><br>ckfreibus@gmail.com</p>
                     </li>
 
                     <li>
-                        <img class="icon" src="resources/icons/marker.svg" alt="pin">
+                        <i class="fa-solid icon fa-location-dot"></i>
                         <p><span class="text-bold">Adresa</span><br>Námestie Ľ. Štúra 2357
                             95501 Topoľčany</p>
                     </li>
                 </ul>
             </li>
 
-            <li>
-                <p class="text-secondary text-bold">Cestovná kancelária Freibus SLOVAKIA Tour, s.r.o.</p>
-                <ul>
-                    <li>
-                        <img class="icon" src="resources/icons/phone-call.svg" alt="mobil">
-                        <p><span class="text-bold">Telefónne číslo</span><br>0904 060 621</p>
-                    </li>
-
-                    <li>
-                        <img class="icon" src="resources/icons/envelope.svg" alt="obálka">
-                        <p><span class="text-bold">E-mail</span><br>ckfreibus@gmail.com</p>
-                    </li>
-                </ul>
-            </li>
 
             <li>
                 <p class="text-secondary text-bold">Zberný dvor
                     (Freibus SLOVAKIA, s.r.o.)</p>
                 <ul>
                     <li>
-                        <img class="icon" src="resources/icons/phone-call.svg" alt="mobil">
+                        <i class="fa-solid icon fa-mobile"></i>
                         <p><span class="text-bold">Telefónne číslo</span><br>0904 300 542</p>
                     </li>
 
                     <li>
-                        <img class="icon" src="resources/icons/envelope.svg" alt="obálka">
+                        <i class="fa-solid icon fa-envelope"></i>
                         <p><span class="text-bold">E-mail</span><br>fszbernydvor@gmail.com</p>
                     </li>
 
                     <li>
-                        <img class="icon" src="resources/icons/marker.svg" alt="pin">
+                        <i class="fa-solid icon fa-location-dot"></i>
                         <p><span class="text-bold">Adresa</span><br>593, 956 18 Bošany</p>
                     </li>
                 </ul>
             </li>
 
             <li>
-                <p class="text-secondary text-bold">MHD Topoľčany</p>
+                <p class="text-secondary text-bold">Mestkská hromadná doprava Topoľčany</p>
                 <ul>
                     <li>
-                        <img class="icon" src="resources/icons/phone-call.svg" alt="mobil">
+                        <i class="fa-solid icon fa-mobile"></i>
                         <p><span class="text-bold">Telefónne číslo</span><br>0905 885 399</p>
                     </li>
 
                     <li>
-                        <img class="icon" src="resources/icons/envelope.svg" alt="obálka">
+                        <i class="fa-solid icon fa-envelope"></i>
                         <p><span class="text-bold">E-mail</span><br>mhdtopolcany@gmail.com</p>
                     </li>
                 </ul>
             </li>
 
-            <li>
-                <p class="text-secondary text-bold">Odkazy</p>
+            <li class="footer-links">
+                <p class="text-secondary text-bold ">Odkazy</p>
                 <ul>
-                    <li><a href="html/vehicles.html">Vozidlá</a></li>
-                    <li><a href="html/trips.html">Zájazdy</a></li>
-                    <li><a href="html/about.html">O nás</a></li>
-                    <li><a href="html/reviews.html">Hodnotenia</a></li>
-                    <li><a href="html/mad_topolcany.html">MAD Topoľčany</a></li>
-                    <li><a href="html/trash.html">Zber odpadu</a></li>
-                </ul>
+                    <ul class="fl-divider">
+                        <div>
+                            <li><a href="index.html">Domov</a></li>
+                            <li><a href="html/vehicles.html">Vozidlá</a></li>
+                            <li><a href="html/trips.html">Zájazdy</a></li>
+                            <li><a href="html/about.html">O nás</a></li>
+
+                        </div>
+                        <div>
+                            <li><a href="html/news.html">Aktuality</a></li>
+                            <li><a href="html/reviews.html">Hodnotenia</a></li>
+                            <li><a href="html/mad_topolcany.html">MAD Topoľčany</a></li>
+                            <li><a href="html/trash.html">Zber odpadu</a></li>
+                        </div>
+                    </ul>
             </li>
 
         </ul>
@@ -287,5 +283,6 @@
     </footer>
 
 </body>
+<script src="script.js"></script>
 
 </html>

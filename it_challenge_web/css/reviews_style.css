@@ -20,12 +20,19 @@
 
 
 .review-card {
-    width: 600px;
+    max-width: 33vw;
+    min-width: 400px;
     border: 1px solid var(--clr-primary);
+    flex-grow: 1;
     border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    transition: all 0.3s ease-in;
+}
+
+.review-card:hover {
+    box-shadow: 1px 2px 5px rgba(33, 170, 226, 0.5);
 }
 
 .rc-info {
@@ -41,8 +48,12 @@
 
 .rc-user>img {
     border-radius: 50%;
-    width: 75px;
+    width: 50px;
     margin-right: 1rem;
+}
+
+.review-card p {
+    font-size: 14px;
 }
 
 .review-card>.rc-para {
@@ -53,8 +64,17 @@
     margin-bottom: 0;
 }
 
-.plus,
-.minus {
-    font-size: 1.5rem;
+.pros,
+.cons {
+    display: flex;
+    align-items: center;
+}
+
+.pros {
+    margin-bottom: 0.25rem;
+}
+
+.pros>i,
+.cons>i {
     margin-right: 1rem;
 }
